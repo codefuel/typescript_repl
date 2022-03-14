@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "dist",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@constants/*": ["constants/*"],
+      "@database/*": ["database/*"],
+      "@services/*": ["services/*"],
+      "@testUtilities/*": ["test-utilities/*"],
+      "@utilities/*": ["utilities/*"],
+      "~/*": ["./*"]
+    },
+    "plugins": [
+      { "transform": "typescript-transform-paths" }
+    ],
+    "typeRoots": [
+      "types",
+      "src/**/*.test.ts",
+      "node_modules/@types"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": ["src/**/**.ts"]
+}

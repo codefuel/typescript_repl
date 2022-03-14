@@ -1,0 +1,25 @@
+{
+  "name": "typescript-repl",
+  "version": "0.0.1",
+  "description": "Local repo to run ts-node repl",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "",
+  "private": true,
+  "main": "",
+  "scripts": {
+    "ts-node": "ts-node"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.10",
+    "ts-node": "^10.1.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
